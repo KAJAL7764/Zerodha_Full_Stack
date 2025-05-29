@@ -1,59 +1,65 @@
+
+
 import React from "react";
 
 function Footer() {
   return (
-    <footer style={{ backgroundColor: "rgb(250, 250, 250)" }}>
-      <div className="container border-top mt-5">
-        <div className="row mt-5">
-          <div className="col">
-            <img src="media/images/logo.svg" style={{ width: "50%" }} />
-            <p>
+    <footer style={{ backgroundColor: "#f8f9fa" }} className="pt-5 pb-4 border-top mt-5">
+      <div className="container">
+        <div className="row">
+          {/* Logo and Company Info */}
+          <div className="col-md-3 mb-4">
+            <img
+              src="https://zerodha.com/static/images/logo.svg"
+              alt="Logo"
+              style={{ width: "60%" }}
+              className="mb-3"
+            />
+            <p className="text-muted small">
               &copy; 2010 - 2024, Not Zerodha Broking Ltd. All rights reserved.
             </p>
           </div>
-          <div className="col">
-            <p>Company</p>
-            <a href="">About</a>
-            <br />
-            <a href="">Products</a>
-            <br />
-            <a href="">Pricing</a>
-            <br />
-            <a href="">Referral programme</a>
-            <br />
-            <a href="">Careers</a>
-            <br />
-            <a href="">Zerodha.tech</a>
-            <br />
-            <a href="">Press & media</a>
-            <br />
-            <a href="">Zerodha cares (CSR)</a>
-            <br />
+
+          {/* Company Links */}
+          <div className="col-md-3 mb-4">
+            <h6 className="fw-bold">Company</h6>
+            <ul className="list-unstyled">
+              <li><a href="#" className="text-muted text-decoration-none">About</a></li>
+              <li><a href="#" className="text-muted text-decoration-none">Products</a></li>
+              <li><a href="#" className="text-muted text-decoration-none">Pricing</a></li>
+              <li><a href="#" className="text-muted text-decoration-none">Referral programme</a></li>
+              <li><a href="#" className="text-muted text-decoration-none">Careers</a></li>
+              <li><a href="#" className="text-muted text-decoration-none">Zerodha.tech</a></li>
+              <li><a href="#" className="text-muted text-decoration-none">Press & media</a></li>
+              <li><a href="#" className="text-muted text-decoration-none">Zerodha cares (CSR)</a></li>
+            </ul>
           </div>
-          <div className="col">
-            <p>Support</p>
-            <a href="">Contact</a>
-            <br />
-            <a href="">Support portal</a>
-            <br />
-            <a href="">Z-Connect blog</a>
-            <br />
-            <a href="">List of charges</a>
-            <br />
-            <a href="">Downloads & resources</a>
-            <br />
+
+          {/* Support Links */}
+          <div className="col-md-3 mb-4">
+            <h6 className="fw-bold">Support</h6>
+            <ul className="list-unstyled">
+              <li><a href="#" className="text-muted text-decoration-none">Contact</a></li>
+              <li><a href="#" className="text-muted text-decoration-none">Support portal</a></li>
+              <li><a href="#" className="text-muted text-decoration-none">Z-Connect blog</a></li>
+              <li><a href="#" className="text-muted text-decoration-none">List of charges</a></li>
+              <li><a href="#" className="text-muted text-decoration-none">Downloads & resources</a></li>
+            </ul>
           </div>
-          <div className="col">
-            <p>Account</p>
-            <a href="">Open an account</a>
-            <br />
-            <a href="">Fund transfer</a>
-            <br />
-            <a href="">60 day challenge</a>
-            <br />
+
+          {/* Account Links */}
+          <div className="col-md-3 mb-4">
+            <h6 className="fw-bold">Account</h6>
+            <ul className="list-unstyled">
+              <li><a href="#" className="text-muted text-decoration-none">Open an account</a></li>
+              <li><a href="#" className="text-muted text-decoration-none">Fund transfer</a></li>
+              <li><a href="#" className="text-muted text-decoration-none">60 day challenge</a></li>
+            </ul>
           </div>
         </div>
-        <div className="mt-5 text-muted" style={{ fontSize: "14px" }}>
+
+        {/* Legal Disclaimer */}
+        <div className="mt-5 text-muted small">
           <p>
             Zerodha Broking Ltd.: Member of NSE​ &​ BSE – SEBI Registration no.:
             INZ000031633 CDSL: Depository services through Zerodha Securities

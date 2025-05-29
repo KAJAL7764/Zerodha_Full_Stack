@@ -1,6 +1,6 @@
 import React from "react";
 
-function RightSection({ imageURL, productName, productDesription, learnMore }) {
+function RightSection({ productName, productDesription, learnMore }) {
   return (
     <div className="container mt-5">
       <div className="row">
@@ -12,7 +12,7 @@ function RightSection({ imageURL, productName, productDesription, learnMore }) {
           </div>
         </div>
         <div className="col-6">
-          <img src={imageURL} />
+          <img src="https://zerodha.com/static/images/products-console.png" />
         </div>
       </div>
     </div>
